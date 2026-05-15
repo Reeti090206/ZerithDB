@@ -17,6 +17,8 @@ import CodeWalkthrough from "@/components/CodeWalkthrough";
 import TerminalShowcase from "@/components/TerminalShowcase";
 import AnimatedDiagram from "@/components/AnimatedDiagram";
 import FrameworkSection from "@/components/FrameworkSection";
+import { TryShell } from "@/components/try-shell/TryShell";
+
 
 export default function LandingPage() {
   const fadeInUp = {
@@ -264,6 +266,11 @@ export default function LandingPage() {
             <CodeWalkthrough />
           </motion.div>
         </div>
+      </section>
+
+      {/* ── INTERACTIVE PLAYGROUND SECTION ── */}
+      <section id="try-it-out" className="py-24 bg-gray-50/50 border-b border-gray-100 overflow-hidden">
+        <TryShell />
       </section>
 
       {/* ── 3. CORE FEATURES ── */}
